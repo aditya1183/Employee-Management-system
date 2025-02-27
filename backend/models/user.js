@@ -20,8 +20,8 @@ const userSchema = new mongoose.Schema({
   ],
   image: { type: String },
   address: { type: String, required: true },
-  linkedInId: { type: String, required: true },
-  phone: { type: String, required: true },
+  linkedInId: { type: String },
+  phone: { type: String },
   githubId: { type: String, required: true },
   dateOfBirth: { type: Date, required: true },
 });
