@@ -59,7 +59,8 @@ const Dashboard = () => {
             </div>
             <div className="row">
               <div className="col-lg-4 col-md-5">
-                <EmpTable employee={employee} />
+                <EmpTable employee={employee} /> 
+                {/*  */}
               </div>
               <div className="col-lg-8 col-md-7">
                 <EmpList employee={employee} />
