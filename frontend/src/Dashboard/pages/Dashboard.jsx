@@ -15,6 +15,7 @@ import { Spin } from "antd";
 const Dashboard = () => {
   const [employee, setEmployee] = useState([]);
   const authUser = useContext(userContext);
+  console.log(authUser);
 
   useEffect(() => {
     const getEmployeeDetails = async () => {
@@ -68,7 +69,7 @@ const Dashboard = () => {
           </div>
         </div>
       ) : (
-        <Spin fullscreen></Spin>
+        <h1>asd</h1>        
       )}
     </>
   );

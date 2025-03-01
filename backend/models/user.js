@@ -1,5 +1,5 @@
 const mongoose = require("mongoose");
-const mongoValidator = require("mongoose-unique-validator");
+// const mongoValidator = require("mongoose-unique-validator");
 
 const userSchema = new mongoose.Schema({
   email: { type: String, required: true, unique: true },
@@ -20,13 +20,13 @@ const userSchema = new mongoose.Schema({
   ],
   image: { type: String },
   address: { type: String, required: true },
-  linkedInId: { type: String },
+  linkedInId: { type: String, required: true },
   phone: { type: String },
   githubId: { type: String, required: true },
   dateOfBirth: { type: Date, required: true },
 });
 
-userSchema.plugin(mongoValidator);
+// userSchema.plugin(mongoValidator);
 
 const userModel = mongoose.model("User", userSchema);
 

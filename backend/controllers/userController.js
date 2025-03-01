@@ -48,7 +48,7 @@ const newUser = async (req, res, next) => {
     address,
     dateOfBirth,
     githubId,
-    linkedIn,
+    linkedInId,
     phone,
   } = req.body;
 
@@ -84,7 +84,7 @@ const newUser = async (req, res, next) => {
       address,
       dateOfBirth,
       githubId,
-      linkedInId: linkedIn,
+      linkedInId: linkedInId,
       phone,
     });
 
