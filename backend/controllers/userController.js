@@ -89,12 +89,20 @@ const newUser = async (req, res, next) => {
     });
 
     newUser.image = "uploads\\images\\user-default.jpg";
+    console.log("Hello");
+    const addusertodb = await newUser.save();
 
-    await newUser.save();
+    console.log(addusertodb);
+    console.log("aditya");
     res.status(201).send({ message: "Register Success", success: true });
   } catch (error) {
-    console.log(error);
-    res.status(500).send({ message: `${error.message}`, success: false });
+    console.log("Hello from catch");
+    // console.log(error);
+    res.status(500).send({
+      message: `${error.message}`,
+      success: false,
+      aditya: "aditya vashitha",
+    });
   }
 };
 

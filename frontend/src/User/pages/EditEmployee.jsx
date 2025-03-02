@@ -61,11 +61,23 @@ const EditEmployee = (data) => {
     }
 
     try {
+<<<<<<< HEAD
       await axios.patch(`http://localhost:8000/api/users/editEmployee/${user._id}`, formData, {
         headers: {
           Authorization: "Bearer " + auth.token,
         },
       });
+=======
+      await axios.patch(
+        `http://localhost:8000/api/users/editEmployee/${user._id}`,
+        formData,
+        {
+          headers: {
+            Authorization: "Bearer " + auth.token,
+          },
+        }
+      );
+>>>>>>> 73810a0263532f583c20dae9fc389cc809e6538c
       setLoading(true);
       message.success("Profile Updated successfully");
       data.changeMode();

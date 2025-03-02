@@ -27,6 +27,8 @@ const Dashboard = () => {
     };
     getEmployeeDetails();
     authUser.getUserData();
+
+    console.log(employee);
     // eslint-disable-next-line
   }, []);
 
@@ -57,11 +59,13 @@ const Dashboard = () => {
                 </Link>
               )}
             </div>
+
             <div className="row">
               <div className="col-lg-4 col-md-5">
                 <EmpTable employee={employee} /> 
                 {/*  */}
               </div>
+
               <div className="col-lg-8 col-md-7">
                 <EmpList employee={employee} />
               </div>
