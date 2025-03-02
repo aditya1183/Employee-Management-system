@@ -27,13 +27,7 @@ const Profile = () => {
   useEffect(() => {
     const getSelectedUserData = async () => {
       try {
-<<<<<<< HEAD
         const response = await axios.get(`http://localhost:8000/api/users/${uid}`);
-=======
-        const response = await axios.get(
-          `http://localhost:8000/api/users/${uid}`
-        );
->>>>>>> 73810a0263532f583c20dae9fc389cc809e6538c
         setSelectedUser(response.data.user);
       } catch (error) {
         console.log(error);
